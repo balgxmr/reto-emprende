@@ -131,3 +131,46 @@
 .textoPreCategorias {
   text-align: center;
 }
+
+/* BannerMain */
+.bannerMain-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bannerMain-img {
+  width: 50%; /* Ajusta el ancho de la imagen */
+  height: auto;
+  position: relative;
+  animation: slideIn 1.5s cubic-bezier(0.7, 0, 0.3, 1) forwards; /* Aplica la animación a la imagen */
+}
+
+.bannerMain-info {
+  width: 45%;
+  text-align: center;
+  padding-left: 2rem;
+  animation: slideUp 1.5s cubic-bezier(0.7, 0, 0.3, 1) forwards; /* Aplica la animación al texto */
+}
+
+/* Definimos la animación para la imagen */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Comienza desde fuera de la pantalla a la izquierda */
+  }
+  to {
+    transform: translateX(0); /* Termina en su posición actual */
+  }
+}
+
+/* Definimos la animación para el texto */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Comienza desde abajo */
+    opacity: 0; /* Comienza invisible */
+  }
+  to {
+    transform: translateY(0); /* Termina en su posición actual */
+    opacity: 1; /* Termina visible */
+  }
+}
