@@ -1,0 +1,133 @@
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.imgBannerTest {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el contenedor de las cards */
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* margin-bottom: 1rem; */
+}
+
+/* Estilo para el contenedor de cada categoría */
+.sub-category-container {
+  margin: 2rem 0;
+}
+.sub-category-title {
+  margin-bottom: 1.1rem;
+}
+
+/* BANNER */
+.main-section {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative; /* Asegura que los hijos se posicionen correctamente */
+}
+
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+.main-section h1 {
+  position: relative;
+  z-index: 2; /* Se asegura de que el texto esté encima del overlay */
+}
+/* BANNER: END */
+
+/* Team section */
+.team.descripcion-container {
+  margin: 3rem 20rem;
+}
+.team-title {
+  margin-top: 2rem;
+}
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.team-member-name {
+  margin-top: 1rem;
+}
+.team-member-img {
+  width: auto;
+  height: 10rem;
+}
+
+/* DESC */
+.descripcion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.descripcion-container {
+  padding: 40px 0;
+  text-align: center;
+}
+.descripcion-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.descripcion-container p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.custom-button {
+  width: 150px;
+  margin-left: 1rem;
+}
+
+/* Navbar */
+.navbar-logo {
+  width: auto;
+  height: 80px;
+}
+
+/* Footer */
+.footer-custom {
+  background-color: #e4e4e4;
+  color: #333;
+}
+
+.footer-custom a {
+  color: #007bff;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline; /* Efecto al pasar el mouse */
+}
+
+.textoPreCategorias {
+  text-align: center;
+}
