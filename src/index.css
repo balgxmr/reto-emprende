@@ -113,6 +113,9 @@
   width: auto;
   height: 80px;
 }
+.nav-icon {
+  color: #461b1b;
+}
 
 /* Footer */
 .footer-custom {

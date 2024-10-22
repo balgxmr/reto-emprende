@@ -4,7 +4,9 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import Badge from "@mui/material/Badge";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function NavbarDisplay() {
   return (
@@ -33,9 +35,21 @@ function NavbarDisplay() {
             <Form.Control type="search" placeholder="Search" className="me-2" aria-label="Search" />
             <Button variant="outline-success">Search</Button>
           </Form>
-          <Button className="loginButton" variant="btn btn-dark">
-            Login
-          </Button>
+          <div className="d-flex align-items-center">
+            <a href="" className="me-4">
+              <Badge badgeContent={1} color="secondary">
+                <FontAwesomeIcon icon={faHeart} size="lg" className="nav-icon" /> {/* Color chocolate */}
+              </Badge>
+            </a>
+            <a href="" className="me-4">
+              <Badge badgeContent={1} color="secondary">
+                <FontAwesomeIcon icon={faShoppingCart} size="lg" className="nav-icon" /> {/* Color chocolate */}
+              </Badge>
+            </a>
+            <Button className="loginButton" variant="btn btn-dark">
+              Login
+            </Button>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
